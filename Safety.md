@@ -1,6 +1,5 @@
 What are worst case scenarios we should be aware or, assess the risk of and potentially act on?
 
-
 ### Fire
 
 Should we do active steps to minimize the risk of the hardware igniting?

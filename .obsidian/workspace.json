@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Safety.md",
+                "file": "Feature Ideas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Safety"
+              "title": "Feature Ideas"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Safety.md",
+                "file": "Feature Ideas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,11 +200,11 @@
   },
   "active": "53296600c5720385",
   "lastOpenFiles": [
+    "Version 1.1.md",
+    "Version 1.md",
+    "Safety.md",
     "README.md",
     "Hardware.md",
-    "Version 1.md",
-    "Version 1.1.md",
-    "Safety.md",
     "Feature Ideas.md",
     "CLAUDE.md",
     "decisions"
