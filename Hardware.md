@@ -3,7 +3,8 @@
 - RAM: 32GB DDR4
 - PSU: be quiet! Pure Power 13 M 1000W PSU
 - MB: MSI B550 So.AM4 Dual Channel DDR4 ATX
+- CPU-Cooler: NZXT - Kraken Liquid cooler
 
 
-- do we need an additional/better hard drive? (depending on model weights -->do research on that)
+- do we need an additional/better hard drive? (depending on model weights --> lets do research on that)
 - 
