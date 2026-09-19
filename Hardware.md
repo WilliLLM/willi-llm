@@ -6,5 +6,5 @@
 - CPU-Cooler: NZXT - Kraken Liquid cooler
 
 
-- do we need an additional/better hard drive? (depending on model weights --> lets do research on that)
-- 
+- do we need an additional/better hard drive? (depending on model weights and Backup workflows --> lets do research on that)
+-

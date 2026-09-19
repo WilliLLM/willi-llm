@@ -1,3 +1,5 @@
+# Backup
+- only needed if real working data lies besides the model-weights
 
 # PV surplus usage
 - PV queue
