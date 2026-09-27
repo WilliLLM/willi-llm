@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Feature Ideas.md",
+                "file": "LLM - Benchmark.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Feature Ideas"
+              "title": "LLM - Benchmark"
             }
           }
         ],
@@ -209,8 +209,8 @@
                   "activeTabId": "tab-1789844408329-8jphqwm"
                 }
               },
-              "icon": "bot",
-              "title": "Claudian"
+              "icon": "lucide-ghost",
+              "title": "claudian-view"
             }
           }
         ],
@@ -234,13 +234,15 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "49af8343721134ed",
+  "active": "502731b407996aec",
   "lastOpenFiles": [
-    "Hardware.md",
+    "Unbenannt.md",
+    "LLM - Benchmark.md",
     "Software.md",
+    "Feature Ideas.md",
+    "Hardware.md",
     "Version 1.1.md",
     "Version 1.md",
-    "Feature Ideas.md",
     "KnowHow",
     "README.md",
     "CLAUDE.md",
