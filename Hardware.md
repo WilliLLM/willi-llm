@@ -5,6 +5,10 @@
 - MB: MSI B550 So.AM4 Dual Channel DDR4 ATX
 - CPU-Cooler: NZXT - Kraken Liquid cooler
 
-
 - do we need an additional/better hard drive? (depending on model weights and Backup workflows --> lets do research on that)
--
+
+GPU Specs (stress-tested with Furmark):
+- max. power-consumption: ~480W
+- min. power-consumption: ~40W
+- max. GPU-temperature: 72°C
+- GPU fan-activity: ~51%

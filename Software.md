@@ -1,0 +1,3 @@
+- Ubuntu Server vs. Proxmoxx?
+- Ollama
+- 
