@@ -1,2 +1,6 @@
 Links
 https://selfh.st/
+
+Interesting configuration aiming for more tk/sec and saving vram (Qwen 3.8 27B - RTX 4090 24GB)
+https://www.reddit.com/r/LocalLLaMA/comments/1vr32vs/qwen_38_27b_rtx_4090_24gb_sharing_my_config/?tl=de&utm_source=embedv2&utm_medium=post_embed&utm_content=post_title&embed_host_url=https%3A%2F%2Flinustechtips.com%2Findex.php
+
