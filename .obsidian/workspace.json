@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software.md",
+                "file": "Hardware.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Software"
+              "title": "Hardware"
             }
           }
         ]
@@ -219,12 +219,12 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "53296600c5720385",
+  "active": "560e851eb1515c8f",
   "lastOpenFiles": [
+    "Software.md",
     "LLM - Benchmark.md",
     "Version 1.1.md",
     "Version 1.md",
-    "Software.md",
     "Safety.md",
     "README.md",
     "Feature Ideas.md",
