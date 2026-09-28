@@ -1,0 +1,58 @@
+# script to measure single- and queue-latency against Ollama-server
+
+import time
+import threading
+import requests
+
+OLLAMA_URL = "http://<TAILSCALE-IP>:11434/api/generate"
+MODEL = "qwen3:8b"
+
+# Langer, realistischer Kontext für Anfrage 1
+PROMPT_1 = "Fasse folgenden Text ausführlich zusammen: " + ("Beispieltext " * 800)
+
+# Kürzere Anfrage 2, die kurz nach Anfrage 1 gesendet wird
+PROMPT_2 = "Was ist die Hauptstadt von Deutschland?"
+
+results = {}
+
+def send_request(name, prompt, delay=0):
+    if delay:
+        time.sleep(delay)
+
+    start = time.time()
+    first_token_time = None
+
+    response = requests.post(
+        OLLAMA_URL,
+        json={"model": MODEL, "prompt": prompt, "stream": True},
+        stream=True,
+    )
+
+    for line in response.iter_lines():
+        if line:
+            if first_token_time is None:
+                first_token_time = time.time()
+                print(f"[{name}] Erstes Token nach {first_token_time - start:.2f} Sekunden")
+
+    end = time.time()
+    results[name] = {
+        "time_to_first_token": first_token_time - start if first_token_time else None,
+        "total_time": end - start,
+    }
+    print(f"[{name}] Fertig nach {end - start:.2f} Sekunden gesamt")
+
+
+# Anfrage 1 sofort starten, Anfrage 2 mit kleinem Versatz hinterher
+t1 = threading.Thread(target=send_request, args=("Anfrage 1", PROMPT_1, 0))
+t2 = threading.Thread(target=send_request, args=("Anfrage 2", PROMPT_2, 2))
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+
+print("\n--- Ergebnisse ---")
+for name, data in results.items():
+    print(f"{name}: Zeit bis erstes Token = {data['time_to_first_token']:.2f} Sekunden, "
+          f"Gesamtzeit = {data['total_time']:.2f} Sekunden")
